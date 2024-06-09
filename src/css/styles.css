@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./uikit.css');
 @import url('./header.css');
 
 :root {
@@ -14,12 +14,30 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --asset-black-light: #292929;
+  --asset-green-light: #00b068;
+  --asset-white-light: #f0f0f0;
+  --asset-grey-light: #e4e5e6;
+  --asset-lgreen-light: #bcdfd1;
+
+  --asset-black-dark: #1e2023;
+  --asset-green-dark: #14c57c;
+  --asset-white-dark: #f0f0f0;
+  --asset-grey-dark: #2a2d32;
+  --asset-lgreen-dark: #204136;
+
+  --asset-black: var(--asset-black-light);
+  --asset-green: var(--asset-green-light);
+  --asset-white: var(--asset-white-light);
+  --asset-grey: var(--asset-grey-light);
+  --asset-lgreen: var(--asset-lgreen-light);
+
+  color: var(--asset-black);
+  background-color: var(--asset-white);
 }

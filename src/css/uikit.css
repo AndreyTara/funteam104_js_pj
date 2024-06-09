@@ -1,0 +1,243 @@
+/* label span {
+  color: var(--colorgrey);
+}
+
+/* [type='checkbox']:checked body {
+   ставим иконку, когда чекбокс включен 
+  background-color: var(--colorgrey-light);
+} */
+*/ html body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+html.dark body {
+  background-color: #333;
+  color: #f0f0f0;
+}
+.page__reset {
+  opacity: 0;
+  border: none;
+  transition: all 250ms ease;
+  position: relative;
+  background-color: transparent;
+  cursor: none;
+}
+.page__reset.active {
+  opacity: 1;
+}
+.page__reset::after {
+  content: 'x';
+  position: absolute;
+  top: -27px;
+  left: -5px;
+  cursor: pointer;
+  width: 11px;
+  height: 11px;
+  font-size: 7px;
+  border-radius: 50%;
+  line-height: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #668;
+}
+.page__theme {
+  border: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: all 250ms ease;
+}
+html.light .page__theme {
+  background: url(../img/default/sun.svg) 0 0 / 100% no-repeat;
+}
+html.dark .page__theme {
+  background: url(../img/default/moon.svg) 0 0 / 100% no-repeat;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/impact.ttf) format('ttf'),
+    url(../fonts/impact.woff2) format('woff2');
+}
+.typograph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+.section-fonts {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1145px;
+}
+.section-row {
+  display: flex;
+}
+.section-column {
+  display: flex;
+  flex-direction: column;
+}
+.dt-h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 136px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1.8px;
+}
+.dt-h2 {
+  font-family: 'Impact', sans-serif;
+  font-size: 108px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 1.8px;
+}
+.dt-h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+}
+.dt-body1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.dt-body2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.dt-caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+.mob-h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 1.8px;
+}
+
+.mob-h2 {
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: 1.8px;
+}
+.mob-h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+.mob-body1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.mob-body2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.mob-caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+}
+
+.section-color {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 720px;
+  padding: 100px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.square {
+  width: 100px;
+  height: 100px;
+}
+.rectangle {
+  width: 100px;
+  height: 50px;
+}
+.b1 {
+  background-color: #00b068;
+}
+.b2 {
+  background-color: #289990;
+}
+.b3 {
+  background-color: #286099;
+}
+.b4 {
+  background-color: #603799;
+}
+.b5 {
+  background-color: #a13997;
+}
+.b6 {
+  background-color: #de4f69;
+}
+
+.b7 {
+  background-color: #baded7;
+}
+.b8 {
+  background-color: #badedb;
+}
+.b9 {
+  background-color: #baccde;
+}
+.b10 {
+  background-color: #d1c5e0;
+}
+.b11 {
+  background-color: #e0c5de;
+}
+.b12 {
+  background-color: #e5cacf;
+}
+
+.section {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 360px) {
+  .section {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    max-width: 1280px;
+  }
+}
