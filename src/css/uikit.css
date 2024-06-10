@@ -6,7 +6,8 @@
    ставим иконку, когда чекбокс включен 
   background-color: var(--colorgrey-light);
 } */
-*/ html body {
+
+html body {
   background-color: #f0f0f0;
   color: #333;
 }
