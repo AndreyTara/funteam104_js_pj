@@ -11,10 +11,10 @@ function windowLoad() {
 
   function renderCheckbox(theme) {
     if (theme === 'light') {
-      iconCheckboxDom.src = `img/b-${theme}.png`;
+      iconCheckboxDom.src = `/img/b-${theme}.png`;
       iconCheckboxDom.alt = `theme-${theme}`;
     } else if (theme === 'dark') {
-      iconCheckboxDom.src = `img/b-${theme}.png`;
+      iconCheckboxDom.src = `./img/b-${theme}.png`;
       iconCheckboxDom.alt = `theme-${theme}`;
     }
   }
