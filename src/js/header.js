@@ -11,10 +11,10 @@ function windowLoad() {
 
   function renderCheckbox(theme) {
     if (theme === 'light') {
-      iconCheckboxDom.src = `../img/blight.png`;
+      iconCheckboxDom.src = `../assets/blight.png`;
       iconCheckboxDom.alt = `theme-${theme}`;
     } else if (theme === 'dark') {
-      iconCheckboxDom.src = `../img/bdark.png`;
+      iconCheckboxDom.src = `../assets/bdark.png`;
       iconCheckboxDom.alt = `theme-${theme}`;
     }
   }
