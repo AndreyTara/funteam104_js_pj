@@ -6,7 +6,6 @@
    ставим иконку, когда чекбокс включен 
   background-color: var(--colorgrey-light);
 } */
-
 html body {
   background-color: #f0f0f0;
   color: #333;
@@ -49,10 +48,10 @@ html.dark body {
   transition: all 250ms ease;
 }
 html.light .page__theme {
-  background: url(../img/default/sun.svg) 0 0 / 100% no-repeat;
+  background: url(../img/uikit/sun.svg) 0 0 / 100% no-repeat;
 }
 html.dark .page__theme {
-  background: url(../img/default/moon.svg) 0 0 / 100% no-repeat;
+  background: url(../img/uikit/moon.svg) 0 0 / 100% no-repeat;
 }
 
 .typograph {
