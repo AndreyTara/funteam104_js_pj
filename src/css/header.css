@@ -1,3 +1,7 @@
+[type='checkbox']:checked body {
+  /* ставим иконку, когда чекбокс включен  */
+  background-color: var(--asset-black);
+}
 html.light body {
   color: #292929;
   background-color: #f0f0f0;
@@ -50,6 +54,11 @@ html.dark body {
   width: 32px;
   height: 32px;
 }
+.header-menu-btn svg {
+  fill: var(--asset-black);
+  background-color: var(--asset-white-dark);
+}
+
 .header-nav-checkbox {
   opacity: 0;
 }
