@@ -2,7 +2,6 @@ window.addEventListener('load', windowLoad);
 
 function windowLoad() {
   const checkboxDom = document.querySelector('.header-nav-checkbox');
-  const iconCheckboxDom = document.querySelector('.header-nav-container>img');
   const htmlDom = document.documentElement;
 
   const saveUserTheme = localStorage.getItem('user-theme');
@@ -10,13 +9,14 @@ function windowLoad() {
   renderCheckbox(saveUserTheme);
 
   function renderCheckbox(theme) {
-    if (theme === 'light') {
-      iconCheckboxDom.src = `../../assets/blight.png`;
-      iconCheckboxDom.alt = `theme-${theme}`;
-    } else if (theme === 'dark') {
-      iconCheckboxDom.src = `../../assets/blight.png`;
-      iconCheckboxDom.alt = `theme-${theme}`;
-    }
+    const iconCheckboxDom = document.querySelector('.header-nav-container>img');
+    iconCheckboxDom.src = `./img/b${theme}.png`;
+    iconCheckboxDom.alt = `theme-${theme}`;
+    // if (theme === 'light') {
+    // } else if (theme === 'dark') {
+    //   iconCheckboxDom.src = `../../assets/blight.png`;
+    //   iconCheckboxDom.alt = `theme-${theme}`;
+    // }
   }
 
   let userTheme;
