@@ -12,10 +12,10 @@ function windowLoad() {
   function renderCheckbox(theme) {
     if (theme === 'light') {
       iconCheckboxDom.style.background =
-        ' url(img/header/check-light.svg) 0 0 / 100% no-repeat';
+        ' url(img/check-light.svg) 0 0 / 100% no-repeat';
     } else if (theme === 'dark') {
       iconCheckboxDom.style.background =
-        'url(img/header/check-dark.svg) 0 0 / 100% no-repeat';
+        'url(img/check-dark.svg) 0 0 / 100% no-repeat';
     }
   }
 
