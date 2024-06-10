@@ -1,3 +1,8 @@
+#figma
+https://www.figma.com/design/JJBu6X0fAeZ8CVcwSXSYsD/Portfolio-2.0?node-id=0-1&t=VLvCb8Hlrm9EAwos-0
+#DOC
+https://docs.google.com/spreadsheets/d/1gZC4OK4aKBAQUPEKCySlDVX2_gRaUpRhE6R3-SKHizI/edit#gid=0
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування

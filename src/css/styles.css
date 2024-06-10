@@ -41,3 +41,9 @@
   color: var(--asset-black);
   background-color: var(--asset-white);
 }
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/impact.ttf) format('ttf'),
+    url(../fonts/impact.woff2) format('woff2');
+}

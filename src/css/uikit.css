@@ -54,11 +54,6 @@ html.dark .page__theme {
   background: url(../img/default/moon.svg) 0 0 / 100% no-repeat;
 }
 
-@font-face {
-  font-family: 'Impact';
-  src: url(../fonts/impact.ttf) format('ttf'),
-    url(../fonts/impact.woff2) format('woff2');
-}
 .typograph {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;

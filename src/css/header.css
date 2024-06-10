@@ -1,7 +1,7 @@
-[type='checkbox']:checked body {
-  /* ставим иконку, когда чекбокс включен  */
-  background-color: var(--asset-black);
-}
+/* [type='checkbox']:checked body { */
+/* ставим иконку, когда чекбокс включен  */
+/* background-color: var(--asset-black); */
+/* } */
 html.light body {
   color: #292929;
   background-color: #f0f0f0;
@@ -62,6 +62,7 @@ html.dark body {
 .header-nav-checkbox {
   opacity: 0;
 }
+
 @media screen and (min-width: 360px) {
 }
 @media screen and (min-width: 768px) {
