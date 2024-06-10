@@ -26,17 +26,8 @@ html.dark body {
 }
 .header-nav-logo {
   display: inline-block;
-  font-family: 'Impact', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.5px;
-  color: #292929;
-  text-transform: uppercase;
 }
-.header-nav-logo span {
-  color: #00b068;
-}
+
 .header-nav-list {
   display: flex;
   gap: 40px;

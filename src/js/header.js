@@ -2,7 +2,7 @@ window.addEventListener('load', windowLoad);
 
 function windowLoad() {
   const checkboxDom = document.querySelector('.header-nav-checkbox');
-  const iconCheckboxDom = document.querySelector('.header-nav-container span');
+  const iconCheckboxDom = document.querySelector('.header-nav-container>img');
   const htmlDom = document.documentElement;
 
   const saveUserTheme = localStorage.getItem('user-theme');
@@ -11,11 +11,11 @@ function windowLoad() {
 
   function renderCheckbox(theme) {
     if (theme === 'light') {
-      iconCheckboxDom.style.background =
-        ' url(./img/check-light.svg) 0 0 / 100% no-repeat';
+      iconCheckboxDom.src = `./img/b-${theme}.png`;
+      iconCheckboxDom.alt = `theme-${theme}`;
     } else if (theme === 'dark') {
-      iconCheckboxDom.style.background =
-        'url(./img/check-dark.svg) 0 0 / 100% no-repeat';
+      iconCheckboxDom.src = `./img/b-${theme}.png`;
+      iconCheckboxDom.alt = `theme-${theme}`;
     }
   }
 
